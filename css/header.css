@@ -214,6 +214,7 @@ ul.sub_menu li a {
         overflow: hidden;
       }
 
+
       .m-menu-sec {
         background: #fff;
         height: 100%;
@@ -247,29 +248,31 @@ ul.sub_menu li a {
           position:fixed;
       }
 
-      .menu_click.click .sub_menu {
+
+      .sub_menu.click {
           display: contents;
           opacity: 1;
         visibility: visible;
         text-align: initial;
       }
+      
 
-      .menu_click.click .sub_menu li {
+      .sub_menu.click  li {
           background: none;
           color: #000;
           font-size: 16px;
           margin: 0 10px;
       }
 
-      .menu_click.click .sub_menu li:hover {
+      .sub_menu.click  li:hover {
         color: #9592d2;
     }
 
-      .menu_click.click .sub_menu li:hover a {
+      .sub_menu.click li:hover a {
           color: #9592d2;
       }
 
-      .menu_click.click .sub_menu li a {
+      .sub_menu.click  li a {
             color: #000;
       }
 
@@ -287,6 +290,11 @@ ul.sub_menu li a {
       .main_menu__text {
         display: flex;
         width: 100%;
+      }
+
+      .m-menus {
+        display: flex;
+        align-items: center;
       }
 
 
