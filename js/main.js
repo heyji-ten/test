@@ -1,5 +1,7 @@
-$( function() {
-    $( ".navbar_toggleBtn" ).on( "click", function() {
-      $( ".nav__menu" ).toggleClass( "open", 1000 );
-    });
-  } );
+$(document).on("click", ".m-nav", function () { 
+  $( ".m-header" ).toggleClass( "open", 1000 );
+});
+
+$(document).on("click", ".menu_click > .plusicon", function () { 
+  $(".menu_click").toggleClass("click");
+});

@@ -99,11 +99,17 @@ ul.sub_menu {
 .menu_hover:hover ul.sub_menu {
     opacity: 1;
     visibility: visible;
+    z-index: 555;
 }
 
 ul.sub_menu li {
     padding:10px;
     background:#000;
+    color:#fff;
+}
+
+ul.sub_menu li:hover {
+  background: #333;
 }
 
 ul.sub_menu li a {
@@ -198,13 +204,35 @@ ul.sub_menu li a {
       }
 
       .m-menu {
-        background: #fff;
         height: 100%;
         min-height: 100%;
         z-index: 999;
         width: 330px;
         position: absolute;
-        right: 0;
+        right: 0px;
+        transition: ease-in 0.6s;
+        overflow: hidden;
+      }
+
+      .m-menu-sec {
+        background: #fff;
+        height: 100%;
+        min-height: 100%;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateX(330px);
+        transition: ease-in 0.6s;
+      }
+
+      .m-header.open .m-menu {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .m-header.open .m-menu .m-menu-sec {
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0);
       }
 
       .nav_menu a:hover {
@@ -233,6 +261,10 @@ ul.sub_menu li a {
           margin: 0 10px;
       }
 
+      .menu_click.click .sub_menu li:hover {
+        color: #9592d2;
+    }
+
       .menu_click.click .sub_menu li:hover a {
           color: #9592d2;
       }
@@ -240,4 +272,58 @@ ul.sub_menu li a {
       .menu_click.click .sub_menu li a {
             color: #000;
       }
+
+      .menu_click.click .plusicon {
+        transform: rotate(45deg);
+      }
+
+      .plusicon {
+        display: block;
+        position: absolute;
+        right: 0;
+        transition: all 0.3s;
+      }
+
+      .main_menu__text {
+        display: flex;
+        width: 100%;
+      }
+
+
+}
+
+/* arrow up */
+.arrow-up {
+  position: fixed;
+  bottom:50px;
+  right:50px;
+  width: 50px;
+  height: 50px;
+  background-color: #f5f5f8;
+  z-index: 777;
+  cursor: pointer;
+  transition: all 0.5s;
+  border: 1px solid #c7c3c3;
+}
+
+.arrow-up:hover {
+  background-color: #c7c3c3;
+}
+
+.arrow-up i {
+  font-size: 25px;
+  color: #c7c3c3;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.arrow-up:hover i {
+  color:#f5f5f8;
+}
+
+@media(max-width:768px) {
+  .arrow-up {
+    bottom: 100px;
+    right: 0px;
+  }
 }

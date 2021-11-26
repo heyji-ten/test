@@ -48,6 +48,8 @@ ul {
 img {
     margin: 0;
     display: block;
+    width: 100%;
+    max-width: fit-content;
   }
 
 .w1200 {
@@ -310,4 +312,82 @@ img {
 #business .business_cont50 .business_cont {
     width:50%;
 }
+/* business end */
 
+/* media */
+
+@media(max-width:768px) {
+    img {
+        margin: auto;
+      }
+    
+    .heading {
+        text-align: center;
+    }
+
+
+
+    /* overview */
+    #overview .sec_cont {
+        display: block;
+    }
+
+    #overview .sec_contain {
+        width: 100%;
+    }
+
+    #overview .sub_heading {
+        margin: 0 auto 20px auto;
+    }
+    /* overview end */
+
+    /* vision */
+    #vision .vision_container {
+        display: block;
+    }
+
+    #vision .vision_container .vision_cont {
+        width: 100%;
+    }
+    /* vision end */
+
+    /* benefit */
+    #benefit .benefit_cont50 {
+        display: block;
+    }
+
+    #benefit .benefit_cont50 .benefit_cont {
+        width: 100%;
+    }
+
+    #benefit .benefit_cont {
+        margin:20px 0;
+    }
+    /* benefit end */
+
+    /* eco */
+    #eco .sec_cont {
+        display: block;
+    }
+
+    #eco .sec_contain {
+        width: 100%;
+    }
+
+    #eco .sub_heading {
+        margin: 0 auto 20px auto;
+    }
+    /* eco end */
+
+    /* business */
+    #business .business_cont50 {
+        display: block;
+    }
+
+    #business .business_cont50 .business_cont {
+        width: 100%;
+        margin:0 auto 20px auto;
+    }
+    /* business end */
+
+}

@@ -18,11 +18,11 @@
                     </span>
                 </a>
                     <ul class="sub_menu">
-                        <li><a href="" class="sub_menu_list">Overview</a></li>
-                        <li><a href="" class="sub_menu_list">Vision</a></li>
-                        <li><a href="" class="sub_menu_list">Benefit</a></li>
-                        <li><a href="" class="sub_menu_list">ECO-Networking</a></li>
-                        <li><a href="" class="sub_menu_list">Business Model</a></li>
+                        <li class="sub_menu_list" onclick="javascript:movetab('overview')">Overview</li>
+                        <li class="sub_menu_list" onclick="javascript:movetab('vision')">Vision</li>
+                        <li class="sub_menu_list" onclick="javascript:movetab('benefit')">Benefit</li>
+                        <li class="sub_menu_list" onclick="javascript:movetab('eco')">ECO-Networking</li>
+                        <li class="sub_menu_list" onclick="javascript:movetab('business')">Business Model</li>
                     </ul>
                 </li>
                 <li class="menu_hover">
@@ -66,19 +66,25 @@
                 </div>
             </div>
             <div class="m-menu">
+                <div class="m-menu-sec">
                 <ul class="nav_menu">
                     <li class="menu_click"><a href="" class="main_menu">
                         <span class="main_menu__text">
-                            <span class="menu_text">About MCBP</span>
+                            <span class="menu_text">About MCBP</span><span class="plusicon"><i class="fas fa-plus"></i></span>
                             <i class="underline"></i>
                         </span>
                     </a>
                         <ul class="sub_menu">
-                            <li><a href="" class="sub_menu_list">Overview</a></li>
-                            <li><a href="" class="sub_menu_list">Vision</a></li>
-                            <li><a href="" class="sub_menu_list">Benefit</a></li>
-                            <li><a href="" class="sub_menu_list">ECO-Networking</a></li>
-                            <li><a href="" class="sub_menu_list">Business Model</a></li>
+                            <li class="sub_menu_list" onclick="javascript:movetab('overview')">Overview</li>
+                            <li class="sub_menu_list" onclick="javascript:movetab('vision')">Vision</li>
+                            <li class="sub_menu_list" onclick="javascript:movetab('benefit')">Benefit</li>
+                            <li class="sub_menu_list" onclick="javascript:movetab('eco')">ECO-Networking</li>
+                            <li class="sub_menu_list" onclick="javascript:movetab('business')">Business Model</li>
+                            <!-- <li><a href="" class="sub_menu_list" onclick="javascript:movetab('overview')">Overview</a></li>
+                            <li><a href="" class="sub_menu_list" onclick="javascript:movetab('vision')">Vision</a></li>
+                            <li><a href="" class="sub_menu_list" onclick="javascript:movetab('benefit')">Benefit</a></li>
+                            <li><a href="" class="sub_menu_list" onclick="javascript:movetab('eco')">ECO-Networking</a></li>
+                            <li><a href="" class="sub_menu_list" onclick="javascript:movetab('business')"> Business Model</a></li> -->
                         </ul>
                     </li>
                     <li class="menu_click">
@@ -91,7 +97,7 @@
                     </li>
                     <li class="menu_click"><a href="" class="main_menu">
                         <span class="main_menu__text">
-                            <span class="menu_text">Partner</span>
+                            <span class="menu_text">Partner</span><span class="plusicon"><i class="fas fa-plus"></i></span>
                             <i class="underline"></i>
                         </span>
                         </a>
@@ -112,7 +118,12 @@
                 </div>
             </div>
         </div>
+        </div>
     </nav>
     <!-- navbar end -->
+
+    <!-- arrow up -->
+    <button class="arrow-up"><i class="fas fa-arrow-up"></i></button>
+    <!-- arrow up end -->
 </body>
 </html>

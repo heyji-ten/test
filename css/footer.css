@@ -113,3 +113,13 @@
   .fSite li a {
       color:#fff;
   }
+
+  .arrow {
+    cursor: pointer;
+  }
+
+  @media(max-width:768px) {
+    #footer {
+      text-align: center;
+    }
+  }

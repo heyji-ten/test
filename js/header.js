@@ -1,4 +1,4 @@
-$(".fSite").click(function () { 
+$(document).on("click", ".fSite", function () { 
     $(this).toggleClass("on");
 });
 
@@ -36,8 +36,27 @@ $( document ).ready( function() {
             $( '.arrow-up' ).fadeOut(); 
         } 
     } ); 
-    $( '.arrow-up' ).click( function() { 
+	$(document).on("click", ".arrow-up", function () { 
         $( 'html, body' ).animate( { scrollTop : 0 }, 1000 ); 
         return false; 
     } ); 
 } );
+
+$( document ).ready( function() { 
+	$(document).on("click", ".arrow", function () { 
+        $( 'html, body' ).animate( { scrollTop : 0 }, 1000 ); 
+        return false; 
+    } ); 
+} );
+
+var movetab = function(str){
+	var offset = 100;//헤더 높이
+	var scroll_delay = 1000;//스크롤 내려가는 시간
+	var stick = false;
+	var scrollPosition = $("#"+str).offset().top;
+	
+	console.log(offset);
+	$('html, body').animate({
+		scrollTop: scrollPosition - offset
+	}, scroll_delay);
+}
