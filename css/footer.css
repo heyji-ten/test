@@ -1,0 +1,115 @@
+#footer {
+    background: #f3f3f7;
+}
+
+.footer_sec {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px 0 50px 0;
+}
+
+.footer_sec .f-logo {
+    margin-bottom: 30px;
+    display: block;
+}
+
+.alink .m20 {
+    margin: 0 10px;
+}
+
+.ml20 {
+    margin-left:20px;
+}
+
+.footer_txt {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+#footer .fw500 {
+    font-weight: 500;
+}
+
+.footer-copy {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-copy>span {
+    padding: 7px 0;
+  }
+  
+  .fSite {
+    width: 150px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .fSite > p{
+      transition:all 0.3s;
+    padding: 7px;
+  }
+  
+  .fSite.on > p {
+    padding-left: 8px;
+    background-color: #000;
+    color: #fff;
+  }
+
+  .copyright {
+    display: flex;
+    align-items: center;
+  }
+  
+  .fSite.on ul {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .fSite ul {
+    position: absolute;
+    width: 150px;
+    bottom: 22px;
+    font-size: 16px;
+    
+    background-color: #000;
+    opacity: 0;
+    transition: all 0.3s;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  
+  .fSite li {
+    padding: 7px 0;
+    padding-left: 8px;
+  }
+  
+  .fSite li:hover {
+    background-color: #333;
+  }
+  
+  .fSite i {
+    margin-left: 13px;
+    opacity:0.5;
+    transition:all 0.3s;
+  }
+
+  .fSite li .arricon {
+    transition:all 0.3s;
+  }
+
+  .fSite.on .arricon{
+    display: inline-block;
+    transform: rotate(180deg);
+    margin-left: 13px;
+  }
+
+  .fSite.on  i{
+    opacity:1;
+  }
+
+  .fSite li a {
+      color:#fff;
+  }
