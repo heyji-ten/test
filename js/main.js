@@ -5,6 +5,6 @@ $(document).on("click", ".m-nav", function () {
 
 
 $(document).on("click", ".plusicon", function () { 
-  $(".sub_menu").toggleClass("click");
+  $(".menu_click").toggleClass("click");
 });
 

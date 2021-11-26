@@ -165,9 +165,6 @@ img {
     transform: rotate(90deg);
 }
 
-#vision .vision_container .competence {
-    padding: 50px 120px;
-}
 
 #vision .vision_sec {
     display: flex;
@@ -201,7 +198,7 @@ img {
 /* benefit */
 #benefit .benefit_cont1 {
     display: flex;
-    padding:60px 0px;
+    padding:60px 20px;
     text-align: center;
     border: 1px solid #ddd;
     background:#fff;
@@ -246,7 +243,7 @@ img {
 
 #eco .eco_cont {
     display: flex;
-    padding:60px 0px;
+    padding:60px 20px;
     text-align: center;
     border: 1px solid #ddd;
     background:#fff;
@@ -294,6 +291,7 @@ img {
 
 #business .sub_heading {
     width:60%;
+    margin-left:30px;
 }
 
 #business .iconimg {
@@ -325,7 +323,9 @@ img {
         text-align: center;
     }
 
-
+    span.mbr{
+        display:none !important;
+    }
 
     /* overview */
     #overview .sec_cont {

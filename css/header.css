@@ -249,7 +249,7 @@ ul.sub_menu li a {
       }
 
 
-      .sub_menu.click {
+      .menu_click.click .sub_menu {
           display: contents;
           opacity: 1;
         visibility: visible;
@@ -257,22 +257,22 @@ ul.sub_menu li a {
       }
       
 
-      .sub_menu.click  li {
+      .menu_click.click .sub_menu li {
           background: none;
           color: #000;
           font-size: 16px;
           margin: 0 10px;
       }
 
-      .sub_menu.click  li:hover {
+      .menu_click.click .sub_menu li:hover {
         color: #9592d2;
     }
 
-      .sub_menu.click li:hover a {
+      .menu_click.click .sub_menu li:hover a {
           color: #9592d2;
       }
 
-      .sub_menu.click  li a {
+      .menu_click.click .sub_menu li a {
             color: #000;
       }
 
