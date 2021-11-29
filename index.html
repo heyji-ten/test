@@ -7,17 +7,18 @@
     <title>MCBP</title>
 
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/includeHTML.js"></script>
 
     <script src="https://kit.fontawesome.com/925a1daff6.js" crossorigin="anonymous"></script>
-    
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/slider.css">
     
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- XEIcon 폰트 불러오기 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 
     <link rel="icon" href="./image/favicon16.png" type="image/png" sizes="16x16">
     <link rel="icon" href="./image/favicon32.png" type="image/png" sizes="32x32">
@@ -25,16 +26,195 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="./js/header.js?ver=1" defer></script>
     <script src="./js/main.js" defer></script>
-    <script src="./js/slider.js" defer></script>
 </head>
 <body>
     <!-- header -->
-    <div data-include-path="header.html"></div>
+    <nav id="header">
+        <div class="navbar">
+            <div class="logo">
+                <a href="#" class="pc-logo"><img src="./image/logo.png" alt=""></a>
+            </div>
+            <ul class="nav_menu">
+                <li class="menu_hover"><a href="" class="main_menu">
+                    <span class="main_menu__text">
+                        <span class="menu_text">ABOUT MCBP</span>
+                        <i class="underline"></i>
+                    </span>
+                </a>
+                    <ul class="sub_menu">
+                        <li class="sub_menu_list" onclick="javascript:movetab('overview')">OVERVIEW</li>
+                        <li class="sub_menu_list" onclick="javascript:movetab('vision')">VISION</li>
+                        <li class="sub_menu_list" onclick="javascript:movetab('benefit')">BENEFIT</li>
+                        <li class="sub_menu_list" onclick="javascript:movetab('eco')">ECO-NETWORKNG</li>
+                        <li class="sub_menu_list" onclick="javascript:movetab('business')">BUSINESS MODEL</li>
+                    </ul>
+                </li>
+                <li class="menu_hover">
+                    <a href="" class="main_menu">
+                        <span class="main_menu__text">
+                            <span class="menu_text">NEWS & NOTICE</span>
+                            <i class="underline"></i>
+                        </span>
+                        </a>
+                </li>
+                <li class="menu_hover"><a href="" class="main_menu">
+                    <span class="main_menu__text">
+                        <span class="menu_text">PARTNER</span>
+                        <i class="underline"></i>
+                    </span>
+                    </a>
+                    <ul class="sub_menu">
+                        <li><a href="" class="sub_menu_list">파트너 등록 안내</a></li>
+                        <li><a href="" class="sub_menu_list">파트너 등록 신청</a></li>
+                        <li><a href="" class="sub_menu_list">파트너 정보 수정</a></li>
+                        <li><a href="" class="sub_menu_list">영업 기회 등록</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="login">
+                <ul class="login_set">
+                    <li><a href="">LOGIN</a></li>
+                    <li><a href="">JOIN</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="m-header">
+            <div class="m-navbar">
+                <div class="logo">
+                    <a href="#" class="m-logo"><img src="./image/m-logo.png" alt=""></a>
+                </div>
+                
+                <div class="m-nav">
+                    <div class="humicon"><i class="fas fa-bars"></i></div>
+                </div>
+            </div>
+            <div class="m-menu">
+                <div class="m-menu-sec">
+                <ul class="nav_menu">
+                    <li class="menu_click">
+                        <div class="m-menus">
+                        <a href="" class="main_menu">
+                        <span class="main_menu__text">
+                            <span class="menu_text">About MCBP</span>
+                            <i class="underline"></i>
+                        </span>
+                    </a>
+                    <span class="plusicon"><i class="fas fa-plus"></i></span>
+                </div>
+                        <ul class="sub_menu">
+                            <li class="sub_menu_list" onclick="javascript:movetab('overview')">Overview</li>
+                            <li class="sub_menu_list" onclick="javascript:movetab('vision')">Vision</li>
+                            <li class="sub_menu_list" onclick="javascript:movetab('benefit')">Benefit</li>
+                            <li class="sub_menu_list" onclick="javascript:movetab('eco')">ECO-Networking</li>
+                            <li class="sub_menu_list" onclick="javascript:movetab('business')">Business Model</li>
+                            <!-- <li><a href="" class="sub_menu_list" onclick="javascript:movetab('overview')">Overview</a></li>
+                            <li><a href="" class="sub_menu_list" onclick="javascript:movetab('vision')">Vision</a></li>
+                            <li><a href="" class="sub_menu_list" onclick="javascript:movetab('benefit')">Benefit</a></li>
+                            <li><a href="" class="sub_menu_list" onclick="javascript:movetab('eco')">ECO-Networking</a></li>
+                            <li><a href="" class="sub_menu_list" onclick="javascript:movetab('business')"> Business Model</a></li> -->
+                        </ul>
+                    </li>
+                    <li class="menu_click">
+                        <a href="" class="main_menu">
+                            <span class="main_menu__text">
+                                <span class="menu_text">News & Notice</span>
+                                <i class="underline"></i>
+                            </span>
+                            </a>
+                    </li>
+                    <li class="menu_click">
+                        <div class="m-menus">
+                            <a href="" class="main_menu">
+                            <span class="main_menu__text">
+                                <span class="menu_text">Partner</span>
+                                <i class="underline"></i>
+                            </span>
+                        </a>
+                        <span class="plusicon"><i class="fas fa-plus"></i></span>
+                    </div>
+
+                        <ul class="sub_menu">
+                            <li><a href="" class="sub_menu_list">파트너 등록 안내</a></li>
+                            <li><a href="" class="sub_menu_list">파트너 등록 신청</a></li>
+                            <li><a href="" class="sub_menu_list">파트너 정보 수정</a></li>
+                            <li><a href="" class="sub_menu_list">영업 기회 등록</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="login">
+                    <ul class="login_set">
+                        <li><a href="">LOGIN</a></li>
+                        <li><a href="">JOIN</a></li>
+                        <li><a href="">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- arrow up -->
+    <button class="arrow-up"><i class="fas fa-arrow-up"></i></button>
+    <!-- arrow up end -->
     <!-- header-end -->
 
     <!-- slider -->
    <section id="slider">
-    <div data-include-path="slider.html"></div>
+    <div class="wrap">
+        <!-- 상단 배너 슬라이더 -->
+        <div class="main-bn">
+            <div class="slider">
+                <div class="slides">
+                    <div class="bn active" style="background-image:url('./image/main/main_02.png');">
+                        <div class="inner-txt">
+                            <div class="slider-txt">
+                                <h1 class="slider-title">파트너와 메가존의 <br>
+                                        “공동성장을 위한 클라우드 여정”</h1>
+                                <p class="slider-cont">
+                                    기업을 위한 최적의 클라우드솔루션을 제공하는 메가존소프트는 <span class="mbr"><br></span>
+기업의 규모와 서비스의 목적에 최적화된 클라우드 인프라를 <span class="mbr"><br></span>
+구축하고 운영하며,민첩한 기술지원을 통해서 안정적인 <span class="mbr"><br></span>
+서비스를 제공합니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bn" style="background-image:url('./image/main/main_02.png');">
+                        <div class="inner-txt">
+                            <div class="slider-txt">
+                                <h1 class="slider-title">파트너와 메가존의 <br>
+                                        “공동성장을 위한 클라우드 여정”</h1>
+                                <p class="slider-cont">
+                                    기업을 위한 최적의 클라우드솔루션을 제공하는 메가존소프트는 <span class="mbr"><br></span>
+기업의 규모와 서비스의 목적에 최적화된 클라우드 인프라를 <span class="mbr"><br></span>
+구축하고 운영하며,민첩한 기술지원을 통해서 안정적인 <span class="mbr"><br></span>
+서비스를 제공합니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="slider-btn">
+                    <div class="page-btns">
+                        <div class="page-no">
+                            <span class="current-slide-no"></span>
+                            <span class="slash">/</span>
+                            <span class="total-slide-no"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="prevbtn">
+                    <button class="page-btn prev-btn"><i class="xi-angle-left"></i></button>
+                </div>
+                <div class="nextbtn">
+                        <button class="page-btn next-btn"><i class="xi-angle-right"></i></button>
+                </div>
+            </div>
+        </div>    
+    </div>
    </section>
     <!-- slider end-->
 
@@ -54,7 +234,7 @@
                             <span class="mbr"><br></span>파트너사의 고객 Coverage 역량을 극대화 합니다.</div>
                     </div>
                 </div>
-                <div class="sec_contain">
+                <div class="sec_contain rig">
                     <img src="./image/main/main_07.png" alt="">
                     <div class="sub_heading">
                         <h3 class="heading-title">Partner Eco-Network 정의</h3>
@@ -256,7 +436,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="sec_contain">
+                <div class="sec_contain rig">
                     <img src="./image/main/main_16.png" alt="">
                     <div class="sub_heading">
                         <h3 class="heading-title">클라우드 비즈니스 파트너 프로그램</h3>
@@ -432,7 +612,110 @@
     <!-- business end -->
 
     <!-- bottom -->
-    <div data-include-path="footer.html"></div>
+    <footer id="footer">
+        <div class="footer_sec">
+            <div class="f-logo arrow" >
+                <img src="./image/f-logo.png" alt="">
+            </div>
+            <div class="footer_txt">
+                <div class="alink"><a href="#">이용약관</a><span class="m20">|</span><a href="#">개인정보처리방침</a></div>
+                <div class="copy">
+                    <span class="fw500">상호명 : </span>메가존클라우드㈜ <span class="fw500 ml20">사업자번호 : </span>232-88-00982 <span class="fw500 ml20">대표이사 : </span>이주완, 조원우
+                    <br>
+                    <span class="fw500">주소 : </span>서울특별시 강남구 논현로85길 46 메가존빌딩 <span class="fw500 ml20">TEL : </span>1644-2243 <span class="fw500 ml20">Fax : </span>+82-2-2109-2599
+                    <br>
+                    <span class="fw500">E-MAIl : </span>jhk@megazone.com
+                </div>
+            </div>
+            <div class="footer-copy">
+                <div class="copyright">
+                    Copyright 2021 © MEGAZONE CLOUD Corp. All Right Reserved.
+                </div>
+                <div class="fSite">
+                    <p>Family Site <span class="arricon"><i class="fas fa-angle-up"></i></span></p>
+                    <ul>
+                        <li><a target="_blank" href="https://www.mz.co.kr/ ">MEGAZONE</a> </li>
+                        <li><a target="_blank" href="https://www.megazone.com/ ">MEGAZONECLOUD</a></li>
+                        <li><a target="_blank" href="https://www.hosting.kr/  ">Hosting Kr</a></li>
+                        <li><a target="_blank" href="https://www.pentacle.co.kr/ ">Pentacle</a></li>
+                        <li><a target="_blank" href="https://indigo3d.co.kr/ ">Indigo</a></li>
+                        <li><a target="_blank" href="https://cloudclass.co.kr/ ">Cloudclass</a></li>
+                        <li><a target="_blank" href="https://mz.recruiter.co.kr/appsite/company/index ">Carrer Portal</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- bottom-end -->
+
+    <script>
+        console.clear();
+
+// 상단 메인 배너 슬라이더
+$('.page-btn').click(function(){
+    var $clicked = $(this);
+    var $slider = $(this).closest('.slider');
+    
+    var index = $(this).index();
+    var isLeft = index == 0;
+    //console.log(index);
+    
+    var $current = $slider.find(' > .slides > .bn.active');
+    var $post;
+    
+    if ( isLeft ){
+        $post = $current.prev();
+    }
+    else {
+        $post = $current.next();
+    }
+    //console.log($post.length);
+    
+    if ( $post.length == 0 ){
+        if ( isLeft ){
+            $post = $slider.find(' > .slides > .bn:last-child');
+        }
+        else {
+            $post = $slider.find(' > .slides > .bn:first-child');
+        }
+    }
+    
+    $current.removeClass('active');
+    $post.addClass('active');
+    
+    updateCurrentPageNumber();
+});
+
+setInterval(function(){
+    $('.next-btn').click();
+}, 8000);
+
+// 슬라이더 페이지 번호 지정
+function pageNumber__Init(){
+    // 전채 배너 페이지 갯수 세팅해서 .slider 에 'data-slide-total' 넣기
+    var totalSlideNo = $('.main-bn > .slider > .slides > .bn').length;
+    //console.log(totalSlideNo);
+    
+    $('.main-bn > .slider').attr('data-slide-total', totalSlideNo);
+    
+    // 각 배너 페이지 번호 매기기
+    $('.main-bn > .slider > .slides > .bn').each(function(index, node){
+        $(node).attr('data-slide-no', index + 1);
+    });
+};
+
+pageNumber__Init();
+
+// 슬라이더 이동시 페이지 번호 변경
+function updateCurrentPageNumber(){
+    var totalSlideNo = $('.main-bn > .slider').attr('data-slide-total');
+    var currentSlideNo = $('.main-bn > .slider > .slides > .bn.active').attr('data-slide-no');
+    
+    $('.total-slide-no').html(totalSlideNo);
+    $('.current-slide-no').html(currentSlideNo);
+};
+
+updateCurrentPageNumber()
+    </script>
 </body>
 </html>

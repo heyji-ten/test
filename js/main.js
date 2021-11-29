@@ -4,7 +4,7 @@ $(document).on("click", ".m-nav", function () {
 
 
 
-$(document).on("click", ".plusicon", function () { 
-  $(".menu_click").toggleClass("click");
-});
+// $(document).on("click", ".plusicon", function () { 
+//   $(".menu_click").toggleClass("click");
+// });
 

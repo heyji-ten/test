@@ -9,8 +9,13 @@ body {
     font-family: "Noto Sans KR", sans-serif;
     font-size: 16px;
     font-size: 300;
+    width: 100%;
     overflow-x: hidden;
 
+  }
+
+  section{
+    overflow-x: hidden;
   }
 
   h1 {
@@ -112,6 +117,11 @@ img {
 #overview .sub_heading .heading-content {
     font-size:18px;
 }
+
+#overview .rig img,
+#overview .rig .sub_heading {
+    margin-left:auto;
+}
 /* overview end */
 
 /* vision */
@@ -145,10 +155,13 @@ img {
 
 #vision .vision_container {
     display: flex;
+    justify-content: space-between;
+    margin:0;
 }
 
 #vision .vision_container .vision_cont {
     width: 45%;
+    margin: 0;
 }
 
 #vision .iconimg {
@@ -168,7 +181,7 @@ img {
 
 #vision .vision_sec {
     display: flex;
-    background: url("/image/main/main_11.png");
+    background: url('../image/main/main_11.png');
     padding:60px;
     margin-top:80px;
 }
@@ -249,7 +262,7 @@ img {
     background:#fff;
     justify-content: center;
     max-width: 585px;
-    margin: 10px auto;
+    margin: 20px auto;
 }
 
 #eco .sec_cont {
@@ -278,6 +291,10 @@ img {
     padding: 0 0 0 16px;
 }
 
+#eco .rig img,
+#eco .rig .sub_heading {
+    margin-left:auto;
+}
 /* eco networking end */
 
 /* business */
@@ -327,6 +344,10 @@ img {
         display:none !important;
     }
 
+    .sec_content {
+        padding:50px 30px;
+    }
+
     /* overview */
     #overview .sec_cont {
         display: block;
@@ -342,13 +363,28 @@ img {
     /* overview end */
 
     /* vision */
-    #vision .vision_container {
+    #vision .vision_container,
+    #vision .vision_sec {
         display: block;
     }
 
     #vision .vision_container .vision_cont {
         width: 100%;
     }
+
+    #vision .vision_cont {
+        padding: 50px 30px;
+    }
+
+    #vision .vision_sec {
+        padding:60px 30px;
+    }
+
+    #vision .vision_logo {
+        margin-bottom:30px;
+    }
+
+    
     /* vision end */
 
     /* benefit */
@@ -361,7 +397,11 @@ img {
     }
 
     #benefit .benefit_cont {
-        margin:20px 0;
+        margin:20px auto;
+    }
+
+    #benefit .benefit_cont {
+        padding: 50px 30px;
     }
     /* benefit end */
 
