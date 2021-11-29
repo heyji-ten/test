@@ -1,0 +1,433 @@
+
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    font-size: 300;
+    width: 100%;
+    overflow-x: hidden;
+
+  }
+
+  section{
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-weight: 500;
+    font-size: 40px;
+    margin: 0;
+  }
+  
+  h2 {
+    font-weight: 500;
+    font-size: 30px;
+    margin: 0;
+  }
+  
+  h3 {
+    font-weight: 500;  
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  p {
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color:#000;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    margin: 0;
+    display: block;
+    width: 100%;
+    max-width: fit-content;
+  }
+
+.w1200 {
+   max-width: 1200px;
+   margin: 0 auto; 
+}
+
+.heading {
+    margin-bottom:30px;
+}
+
+.heading-content {
+    font-size:20px;
+    line-height:30px;
+    font-weight: 300;
+}
+
+.sec_content {
+    padding:80px 0;
+}
+
+/* ul li 작은점 */
+.small-dot{
+    margin:0 !important;
+    padding:0 !important;
+    list-style: none !important;
+  }
+  .small-dot li{
+    position: relative;
+    margin: 10px 0 0 0;
+    padding: 0 0 0 16px;
+  }
+  .small-dot li:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    width: 2px;
+    height: 2px;
+    border-radius: 100%;
+    background-color: #000;
+  }
+
+/* overview */
+#overview .sec_cont {
+    display: flex;
+}
+
+#overview .sec_contain {
+    width: 50%;
+}
+
+#overview .sub_heading {
+    padding: 30px 25px 25px 30px;
+    border:1px solid #ddd;
+    max-width: 551px;
+    min-height:180px;
+}
+
+#overview .sub_heading .heading-content {
+    font-size:18px;
+}
+
+#overview .rig img,
+#overview .rig .sub_heading {
+    margin-left:auto;
+}
+/* overview end */
+
+/* vision */
+
+#vision {
+    background: #f5f5f8;
+}
+
+#vision .vision_cont {
+    display: flex;
+    padding:50px 80px;
+    border: 1px solid #ddd;
+    background:#fff;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+#vision .sub_heading {
+    margin-left:20px;
+}
+
+#vision .arrowimg {
+    display: flex;
+    max-width:250px;
+    margin: 25px auto;
+}
+
+#vision .arrowimg img {
+    margin:0 20px;
+}
+
+#vision .vision_container {
+    display: flex;
+    justify-content: space-between;
+    margin:0;
+}
+
+#vision .vision_container .vision_cont {
+    width: 45%;
+    margin: 0;
+}
+
+#vision .iconimg {
+    display: flex;
+    align-items: center;
+}
+
+#vision .vision_container .arrow-content {
+    align-items: center;
+    display: flex;
+}
+
+#vision .vision_container .arrow-content img{
+    transform: rotate(90deg);
+}
+
+
+#vision .vision_sec {
+    display: flex;
+    background: url('../image/main/main_11.png');
+    padding:60px;
+    margin-top:80px;
+}
+
+#vision .vision_logo {
+    display: flex;
+    align-items: center;
+}
+
+#vision .vision_txt {
+    margin-left:30px;
+}
+
+#vision .vision_txt li {
+    color:#fff;
+    font-size:18px;
+    line-height:30px;
+    font-weight: 300;
+}
+
+#vision .vision_txt .small-dot li:before {
+    background: #fff;
+}
+
+/* vision end */
+
+/* benefit */
+#benefit .benefit_cont1 {
+    display: flex;
+    padding:60px 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    background:#fff;
+    justify-content: center;
+    max-width: 585px;
+    margin: 10px auto;
+}
+
+#benefit .benefit_cont {
+    display: flex;
+    padding:50px 50px 50px 60px;
+    border: 1px solid #ddd;
+    background:#fff;
+    max-width: 585px;
+    margin: 10px auto;
+}
+
+#benefit .sub_heading {
+    margin-left:30px;
+    width: 75%;
+}
+
+#benefit .iconimg {
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+
+#benefit .benefit_cont50 {
+    display: flex;
+}
+
+#benefit .benefit_cont50 .benefit_cont {
+    width:50%;
+}
+/* benefit end */
+
+/* eco networking */
+#eco {
+    background: #f5f5f8;
+}
+
+#eco .eco_cont {
+    display: flex;
+    padding:60px 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    background:#fff;
+    justify-content: center;
+    max-width: 585px;
+    margin: 20px auto;
+}
+
+#eco .sec_cont {
+    display: flex;
+}
+
+#eco .sec_contain {
+    width: 50%;
+}
+
+#eco .sub_heading {
+    padding: 30px 25px 25px 30px;
+    border:1px solid #ddd;
+    max-width: 590px;
+    min-height:215px;
+    background: #fff;
+}
+
+#eco .sub_heading .heading-content {
+    font-size:18px;
+}
+
+#eco .small-dot li{
+    position: relative;
+    margin: 3px 0 0 0;
+    padding: 0 0 0 16px;
+}
+
+#eco .rig img,
+#eco .rig .sub_heading {
+    margin-left:auto;
+}
+/* eco networking end */
+
+/* business */
+#business .business_cont {
+    display: flex;
+    padding:60px 30px;
+    border: 1px solid #ddd;
+    background:#fff;
+    max-width: 590px;
+}
+
+#business .sub_heading {
+    width:60%;
+    margin-left:30px;
+}
+
+#business .iconimg {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#business .business_cont50 {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+#business .business_cont50 .business_cont {
+    width:50%;
+}
+/* business end */
+
+/* media */
+
+@media(max-width:768px) {
+    img {
+        margin: auto;
+      }
+    
+    .heading {
+        text-align: center;
+    }
+
+    span.mbr{
+        display:none !important;
+    }
+
+    .sec_content {
+        padding:50px 30px;
+    }
+
+    /* overview */
+    #overview .sec_cont {
+        display: block;
+    }
+
+    #overview .sec_contain {
+        width: 100%;
+    }
+
+    #overview .sub_heading {
+        margin: 0 auto 20px auto;
+    }
+    /* overview end */
+
+    /* vision */
+    #vision .vision_container,
+    #vision .vision_sec {
+        display: block;
+    }
+
+    #vision .vision_container .vision_cont {
+        width: 100%;
+    }
+
+    #vision .vision_cont {
+        padding: 50px 30px;
+    }
+
+    #vision .vision_sec {
+        padding:60px 30px;
+    }
+
+    #vision .vision_logo {
+        margin-bottom:30px;
+    }
+
+    
+    /* vision end */
+
+    /* benefit */
+    #benefit .benefit_cont50 {
+        display: block;
+    }
+
+    #benefit .benefit_cont50 .benefit_cont {
+        width: 100%;
+    }
+
+    #benefit .benefit_cont {
+        margin:20px auto;
+    }
+
+    #benefit .benefit_cont {
+        padding: 50px 30px;
+    }
+    /* benefit end */
+
+    /* eco */
+    #eco .sec_cont {
+        display: block;
+    }
+
+    #eco .sec_contain {
+        width: 100%;
+    }
+
+    #eco .sub_heading {
+        margin: 0 auto 20px auto;
+    }
+    /* eco end */
+
+    /* business */
+    #business .business_cont50 {
+        display: block;
+    }
+
+    #business .business_cont50 .business_cont {
+        width: 100%;
+        margin:0 auto 20px auto;
+    }
+    /* business end */
+
+}
