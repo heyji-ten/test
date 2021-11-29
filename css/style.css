@@ -2,7 +2,15 @@
 
 * {
     box-sizing: border-box;
+
+    -webkit-tap-highlight-color :transparent;
   }
+
+  input:focus{
+	outline:none;
+}
+
+
 
 body {
     margin: 0;
